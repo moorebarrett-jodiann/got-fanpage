@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/got-fanpage/static/css/main.dc6292c6.css",
+    "main.js": "/got-fanpage/static/js/main.caeff79c.js",
+    "index.html": "/got-fanpage/index.html",
+    "main.dc6292c6.css.map": "/got-fanpage/static/css/main.dc6292c6.css.map",
+    "main.caeff79c.js.map": "/got-fanpage/static/js/main.caeff79c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc6292c6.css",
+    "static/js/main.caeff79c.js"
+  ]
+}
