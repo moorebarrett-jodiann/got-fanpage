@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-light-grey-bg:#696c79;
+    --app-medium-bg:#282b38;
+    --app-blue-bg:#24346d;
+    --app-light-bg:#e0e0e0;
+    --app-white:rgb(244, 246, 248);
+    --app-red:#ff3c57;
+    --app-red-hover:#e31e38;
+    --app-green:#1dd2ae;
+    --app-green-hover:#1dbd9d;
+    --app-purple:#833cff;
+    --app-purple-hover:#6e1dfa;
+    --app-orange:#ff833c;
+    --app-orange-hover:#fe7a2d;
+    --app-blue:#3c57ff;
+    --app-blue-hover:#364ee6;
+    --app-blue-bg-color: #146ebe;
+    --app-btn-height: 36px;
+    --app-btn-width: 56px;
+    --app-light-text-color: #f4f6f8;
+    --app-dark-text-color: #1c1c1c;
+    --app-h1: 35px;
+    --app-h2: 25px;
+    --app-h3: 15px;
+    --app-h4: 5px;
+    --app-letter-spacing: 0.2px;
+    --app-header-line-height: 70px;
+    --app-text-line-height: 50px;
+    
+    /*transitions and settings*/
+    --app-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --app-btn-padding: 8px 15px;
+    --app-border-radius: 4px;
+    --app-letter-spacing: 0.2px;
+    --app-main-transition: all 0.4s ease-in-out;
+}
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+}
