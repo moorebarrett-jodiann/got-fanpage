@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Helmet } from 'react-helmet';
 
 function AddItem() {
     const [submitted, setSubmitted] = useState(false);
-    const { register, handleSubmit, watch, reset, formState: { errors }, setValue } = useForm({
+    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm({
         defaultValues: {
             firstName: '',
             lastName: '',
@@ -12,14 +12,6 @@ function AddItem() {
             family: ''
         }
     });
-
-    // using 'watch'
-    const firstName = watch("firstName");
-    const lastName = watch("lastName");
-    const fullName = watch("fullName");
-    const title = watch("title");
-    const family = watch("family");
-
     
     // method to show data on submit
     const submitForm = (data) => {

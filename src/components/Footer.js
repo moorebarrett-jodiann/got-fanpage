@@ -4,7 +4,7 @@ function Footer() {
         <>
             <footer>
                 <div className="container">
-                    <p>
+                    <p className="repo">
                         <a 
                             href="https://github.com/moorebarrett-jodiann/got-fanpage" 
                             to="https://github.com/moorebarrett-jodiann/got-fanpage" 
@@ -12,7 +12,11 @@ function Footer() {
                             Game of Thrones Fan Page
                         </a>
                     </p>
-                    <p>Jodi-Ann Barrett</p>
+                    <p className="note">Note: data shown is pulled from the 
+                        <a className="disclosure" href="https://thronesapi.com/" to="https://thronesapi.com/">
+                            Game of Thrones Character API
+                        </a>
+                    </p>
                 </div>
             </footer>
         </>

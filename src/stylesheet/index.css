@@ -360,10 +360,18 @@ section .heading-container .filter-container .sort-options button {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-weight: 400;
     font-size: 17px;
-    color: #fff;
+    color: var(--app-light-text-color);
     letter-spacing: 0.2px;
     text-align: left;
     transition: var(--app-transition);
+}
+
+section .heading-container .filter-container .sort-options button.firstName {
+    width: 14rem;
+}
+
+section .heading-container .filter-container .sort-options button.title {
+    width: 9rem;
 }
 
 section .heading-container .filter-container .sort-options button i {
@@ -904,16 +912,69 @@ section .character-grid .character-card .image-container .img-bg .character-img 
 /* ============================= FOOTER ============================================ */
 
 footer {
-    height: 70px;
     background-color: var(--app-dark-red);
     display: flex;
     justify-content: space-between;
 }
 
 footer .container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+}
+
+@media only screen and (min-width: 1080px) { 
+    
+    footer {
+        height: 70px;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .note {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 1079px) {
+    footer {
+        height: 70px;
+    }
+    
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .note {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+        padding: 10px;
+        height: auto;
+    }
+    
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    footer {
+        height: auto;
+        padding: 10px;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        text-align: center;
+    }
 }
 
 footer p {
@@ -921,9 +982,20 @@ footer p {
     color: var(--app-light-text-color);
 }
 
+footer .note, footer .note a {
+    color: rgba(244, 246, 248, 0.329);
+}
+
+footer .note a {
+    margin-left: 5px;
+}
+
+footer .repo a {
+    color: var(--app-light-text-color);
+}
+
 footer p a {
     letter-spacing: var(--app-letter-spacing);
-    color: var(--app-light-text-color);
     text-decoration: none;
     transition: var(--app-transition);
 }
