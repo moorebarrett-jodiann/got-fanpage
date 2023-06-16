@@ -395,13 +395,6 @@ section .heading-container .filter-container .sort-options button.active i {
     color: var(--app-orange-hover);
 }
 
-section .heading-container .filter-container form select option {
-    font-size: 17px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.08);
-    color: var(--app-dark-text-color);
-}
-
 section .heading-container .filter-container .add-new-item i {
     transition: var(--app-transition);
 }
@@ -832,7 +825,7 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     padding: 0 15px;
     border: 1px solid rgba(255, 153, 0, 0.1);
     background-color: rgba(65, 40, 3, 0.39);
-    border-radius: 4px;
+    border-radius: var(--app-border-radius);
     box-shadow: inset 0px 0px 4px rgba(66, 41, 2, 0.199);
     font-size: 17px;
     font-weight: 400;
@@ -856,7 +849,7 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     padding: 10px 25px;
     width: 100%;
     text-align: center;
-    border-radius: 4px;
+    border-radius: var(--app-border-radius);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 17px;
     font-weight: 600;
@@ -1031,7 +1024,7 @@ footer p:hover a {
 .not-found-container button {
     padding: 10px 25px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: var(--app-border-radius);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 17px;
     font-weight: 600;
@@ -1039,6 +1032,7 @@ footer p:hover a {
     background-color: var(--app-orange);
     border: 1px solid var(--app-orange);
     transition: var(--app-transition);
+    margin-top: 20px;
 }
 
 .not-found-container button a {
