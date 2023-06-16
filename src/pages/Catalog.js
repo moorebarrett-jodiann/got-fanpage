@@ -22,7 +22,6 @@ function Catalog() {
                 const randomIndexes = randomTwenty(totalCharacters, 20);
                 // Retrieve the characters based on the random indexes
                 const randomCharacters = randomIndexes.map(index => result.data[index]);
-                console.log(randomCharacters);
                 setCharacters(randomCharacters);
             })
             .catch(error => {
