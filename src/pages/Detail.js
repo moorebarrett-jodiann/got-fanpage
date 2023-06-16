@@ -41,6 +41,7 @@ function Detail() {
                                 <span className="underline"></span>
                                 <p className="title"><span>( {characterProfile.title} )</span></p>
                                 <p className="family"><span> of {characterProfile.family}</span></p>
+                                <div className="ice-and-fire"></div>
                             </div>
                         </div>
                     </>

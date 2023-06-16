@@ -419,11 +419,6 @@ section .heading-container .filter-container .add-new-item:hover {
     border: 1px solid var(--app-orange-hover);
 }
 
-section .heading-container .filter-container .add-new-item:hover i {
-    color: var(--app-yellow);
-}
-
-
 /* ============================= CATALOG ============================================ */
 
 section .character-grid {
@@ -557,7 +552,7 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     z-index: 1;
     width: 100%;
     height: calc(100vh - 120px - 70px);
-    background-image: url("../images/details-bg2.jpg");
+    background-image: url("../images/details-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -615,6 +610,9 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     height: 100%;
     display: grid;
     align-content: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
 }
 
 .main-character-container .character-profile .details .profile-name {
@@ -664,7 +662,7 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     }
     
     .main-character-container .character-profile .details .profile-name {
-        font-size: 6rem;
+        font-size: 5.4rem;
     }
     
     .main-character-container .character-profile .details .title {
@@ -770,6 +768,13 @@ section .character-grid .character-card .image-container .img-bg .character-img 
         height: 400px;
     }
 }
+
+/* ============================= ADD NEW ITEM ============================================ */
+
+.new-item {
+    color: var(--app-light-text-color);
+}
+
 /* ============================= FOOTER ============================================ */
 
 footer {

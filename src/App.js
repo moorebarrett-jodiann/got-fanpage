@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Catalog from './pages/Catalog';
 import Detail from './pages/Detail';
+import AddItem from './pages/AddItem';
 import { Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
@@ -35,6 +36,7 @@ function App() {
 				<Routes >
 					<Route path="/" element={<Catalog />} />
 					<Route path="/:id" element={<Detail />} /> 
+					<Route path="/new-item" element={<AddItem />} /> 
 				</Routes>
 				<Footer />
 			</main>

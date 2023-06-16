@@ -62,6 +62,12 @@ function Catalog() {
         // Use navigate function for redirection
         navigate(`/${character.id}`); 
     };
+    
+    // Navigate to detail page if a card is clicked
+    const addNewItem = () => {
+        // Use navigate function for redirection
+        navigate(`/new-item`); 
+    };
 
     // Handle sorting option change
     const handleSortOptionChange = useCallback((option) => {
@@ -83,6 +89,7 @@ function Catalog() {
                             <ManageCatalog
                                 onSortOptionChange={handleSortOptionChange}
                                 sortingOption={sortingOption}
+                                addNewItem={addNewItem}
                             />
                         ) : (
                             <></>
