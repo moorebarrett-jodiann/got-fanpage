@@ -8,7 +8,7 @@ function Detail() {
     // 'useParams' hook to retrieve the character name from the URL:
     const { id } = useParams();
     const Character_API = `https://thronesapi.com/api/v2/Characters/${id}`;
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState("Loading profile details...");
 
     useEffect(() => {
         axios
@@ -19,6 +19,7 @@ function Detail() {
             .catch(error => {
                 setMessage('No Details Available');
             });
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id]);
 
     return (
@@ -47,7 +48,7 @@ function Detail() {
                     </>
                 ) : (
                     <div className="container">
-                        <p className="loading">Loading profile details...</p>
+                        <p className="loading">{message}</p>
                     </div>
                 )}
             </div>
