@@ -64,6 +64,7 @@ function Catalog() {
     
     // Navigate to detail page if a card is clicked
     const addNewItem = () => {
+        console.log("here");
         // Use navigate function for redirection
         navigate(`/new-item`); 
     };

@@ -18,7 +18,7 @@ function App() {
 		// splash screen fade-out after 2 seconds
 		const timeout = setTimeout(() => {
 			setShowMain(true);
-		  }, 2000);
+		}, 2000);
 	  
 		  return () => clearTimeout(timeout);
 	}, []);

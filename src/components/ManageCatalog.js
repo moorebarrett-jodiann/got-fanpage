@@ -31,7 +31,7 @@ function ManageCatalog(props) {
                     }
                 </button>
             </div>
-            <button className="add-new-item"><i className="fa-solid fa-plus" onClick={props.addNewItem}></i> Add New</button>
+            <button className="add-new-item" onClick={props.addNewItem}><i className="fa-solid fa-plus"></i> Add New</button>
         </div>
     )
 }

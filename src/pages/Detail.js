@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
 
+
 function Detail() {
     const [characterProfile, setCharacterProfile] = useState(null);
     // 'useParams' hook to retrieve the character name from the URL:

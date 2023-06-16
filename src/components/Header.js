@@ -5,7 +5,7 @@ function Header(props) {
             <header>
                 <div className="container flexbox">
                     <div className="logo-container">
-                        <img src={props.image} alt="logo"/>
+                        <a href="/" to="/"><img src={props.image} alt="logo"/></a>
                     </div>
                     <div className="nav-container">
                         <nav>
