@@ -12,18 +12,14 @@ function Detail() {
     const [message, setMessage] = useState("Loading profile details ...");
 
     useEffect(() => {
-        if (id && typeof id === 'number') {
-            axios
-                .get(Character_API)
-                .then(result => {
-                    setCharacterProfile(result.data);
-                })
-                .catch(error => {
-                    setMessage('Character details unavailable ...');
-                });
-        } else {
-            setMessage('Invalid character ID');
-        }
+        axios
+            .get(Character_API)
+            .then(result => {
+                setCharacterProfile(result.data);
+            })
+            .catch(error => {
+                setMessage('Character details unavailable ...');
+            });
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id, Character_API]);
 
