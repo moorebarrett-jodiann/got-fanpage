@@ -630,9 +630,12 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     margin-bottom: 5px;
 }
 
-.main-character-container .character-profile .details .title,
-.main-character-container .character-profile .details .family {
+.main-character-container .character-profile .details .title {
     color: var(--app-light-text-color);
+}
+
+.main-character-container .character-profile .details .family {
+    color: var(--app-orange);
 }
 
 .main-character-container .character-profile .details .title span {
@@ -640,7 +643,7 @@ section .character-grid .character-card .image-container .img-bg .character-img 
 }
 
 .main-character-container .character-profile .details .family span {
-    color: var(--app-orange);
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -676,6 +679,10 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     }
     
     .main-character-container .character-profile .details .family {
+        font-size: 20px;
+    }
+    
+    .main-character-container .character-profile .details .family span {
         font-size: 25px;
     }
 }
@@ -698,8 +705,12 @@ section .character-grid .character-card .image-container .img-bg .character-img 
         font-size: 6rem;
     }
     
-    .main-character-container .character-profile .details .title,
     .main-character-container .character-profile .details .family {
+        font-size: 16px;
+    }
+
+    .main-character-container .character-profile .details .title,
+    .main-character-container .character-profile .details .family span {
         font-size: 20px;
     }
 }
@@ -725,9 +736,13 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     .main-character-container .character-profile .details .profile-name {
         font-size: 5rem;
     }
+
+    .main-character-container .character-profile .details .family {
+        font-size: 14px;
+    }
     
     .main-character-container .character-profile .details .title,
-    .main-character-container .character-profile .details .family {
+    .main-character-container .character-profile .details .family span {
         font-size: 18px;
     }
 }
@@ -753,9 +768,13 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     .main-character-container .character-profile .details .profile-name {
         font-size: 3rem;
     }
+
+    .main-character-container .character-profile .details .family {
+        font-size: 12px;
+    }
     
     .main-character-container .character-profile .details .title,
-    .main-character-container .character-profile .details .family {
+    .main-character-container .character-profile .details .family span {
         font-size: 15px;
     }
 }
@@ -824,7 +843,7 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     height: 45px;
     padding: 0 15px;
     border: 1px solid rgba(255, 153, 0, 0.1);
-    background-color: rgba(65, 40, 3, 0.39);
+    background-color: rgba(35 21 2 / 35%);
     border-radius: var(--app-border-radius);
     box-shadow: inset 0px 0px 4px rgba(66, 41, 2, 0.199);
     font-size: 17px;

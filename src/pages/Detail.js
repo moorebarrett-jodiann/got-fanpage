@@ -49,7 +49,7 @@ function Detail() {
                                 <p className="profile-name">{characterProfile.fullName}</p>
                                 <span className="underline"></span>
                                 <p className="title"><span>( {characterProfile.title} )</span></p>
-                                <p className="family"><span> of {characterProfile.family}</span></p>
+                                {(characterProfile.family && <p className="family">of the <span>{characterProfile.family} </span>family</p> )}
                                 <div className="ice-and-fire"></div>
                             </div>
                         </div>
