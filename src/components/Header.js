@@ -5,13 +5,13 @@ function Header(props) {
             <header>
                 <div className="container flexbox">
                     <div className="logo-container">
-                        <a href="/" to="/"><img src={props.image} alt="logo"/></a>
+                        <a href="/got-fanpage" to="/got-fanpage"><img src={props.image} alt="logo"/></a>
                     </div>
                     <div className="nav-container">
                         <nav>
                             <ul>
-                                <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#newsletter">Newsletter</a></li>
+                                <li><a href="/got-fanpage">Gallery</a></li>
+                                <li><a href="/got-fanpage">Newsletter</a></li>
                             </ul>
                         </nav>
                     </div>

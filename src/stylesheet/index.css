@@ -1004,6 +1004,55 @@ footer p:hover a {
     color: var(--app-yellow);
 }
 
+/* ============================= NOT FOUND ============================================ */
+
+.error-container {
+    height: calc(100vh - 120px - 70px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+.error-container .loading {
+    color: var(--app-light-text-color);
+    font-size: 15px;
+}
+
+.not-found-container {
+    height: calc(100vh - 120px - 70px);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: var(--app-light-text-color);
+}
+
+.not-found-container button {
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    background-color: var(--app-orange);
+    border: 1px solid var(--app-orange);
+    transition: var(--app-transition);
+}
+
+.not-found-container button a {
+    letter-spacing: var(--app-letter-spacing);
+    text-decoration: none;
+    transition: var(--app-transition);
+    color: var(--app-light-text-color);
+}
+
+.not-found-container button:hover {
+    background-color: var(--app-dark-red);
+    border: 1px solid var(--app-dark-red);
+}
+
 /* ============================= ANIMATIONS ============================================ */
 
 @keyframes zoomIn {

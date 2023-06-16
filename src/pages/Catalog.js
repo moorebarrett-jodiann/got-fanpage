@@ -8,7 +8,7 @@ function Catalog() {
     const [characters, setCharacters] = useState([]);
     const [sortedCharacters, setSortedCharacters] = useState([]);
     const [sortingOption, setSortingOption] = useState("");
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState("Loading character details ...");
     const API_URL = 'https://thronesapi.com/api/v2/Characters';
     const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ function Catalog() {
                 setCharacters(randomCharacters);
             })
             .catch(error => {
-                setMessage('No Characters Available');
+                setMessage('No characters found ...');
             });
         // '[]' ensures that the request is made only when the component mounts
     }, []);
@@ -103,7 +103,9 @@ function Catalog() {
                     </div>
                 </>
                 ) : (
-                    <p>{message}</p>
+                    <div className="error-container">
+                        <p className="loading">{message}</p>
+                    </div>
                 )}
             </section>
         </>

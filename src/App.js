@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Catalog from './pages/Catalog';
 import Detail from './pages/Detail';
 import AddItem from './pages/AddItem';
+import NotFound from './pages/NotFound';
 import { Routes, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
@@ -35,8 +36,9 @@ function App() {
 				<Header image={logo}/>
 				<Routes >
 					<Route path="/" element={<Catalog />} />
-					<Route path="/:id" element={<Detail />} /> 
 					<Route path="/new-item" element={<AddItem />} /> 
+					<Route path="/:id" element={<Detail />} /> 
+					<Route path="/*" element={<NotFound />}  />
 				</Routes>
 				<Footer />
 			</main>

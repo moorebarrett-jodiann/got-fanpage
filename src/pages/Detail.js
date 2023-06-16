@@ -9,19 +9,23 @@ function Detail() {
     // 'useParams' hook to retrieve the character name from the URL:
     const { id } = useParams();
     const Character_API = `https://thronesapi.com/api/v2/Characters/${id}`;
-    const [message, setMessage] = useState("Loading profile details...");
+    const [message, setMessage] = useState("Loading profile details ...");
 
     useEffect(() => {
-        axios
-            .get(Character_API)
-            .then(result => {
-                setCharacterProfile(result.data);
-            })
-            .catch(error => {
-                setMessage('No Details Available');
-            });
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [id]);
+        if (id && typeof id === 'number') {
+            axios
+                .get(Character_API)
+                .then(result => {
+                    setCharacterProfile(result.data);
+                })
+                .catch(error => {
+                    setMessage('Character details unavailable ...');
+                });
+        } else {
+            setMessage('Invalid character ID');
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [id, Character_API]);
 
     return (
         <>
@@ -48,7 +52,7 @@ function Detail() {
                         </div>
                     </>
                 ) : (
-                    <div className="container">
+                    <div className="error-container">
                         <p className="loading">{message}</p>
                     </div>
                 )}

@@ -8,12 +8,18 @@ function Footer() {
                         <a 
                             href="https://github.com/moorebarrett-jodiann/got-fanpage" 
                             to="https://github.com/moorebarrett-jodiann/got-fanpage" 
+                            target="_blank" 
                             rel="noreferrer">
                             Game of Thrones Fan Page
                         </a>
                     </p>
                     <p className="note">Note: data shown is pulled from the 
-                        <a className="disclosure" href="https://thronesapi.com/" to="https://thronesapi.com/">
+                        <a 
+                            className="disclosure" 
+                            href="https://thronesapi.com/" 
+                            to="https://thronesapi.com/" 
+                            target="_blank" 
+                            rel="noreferrer">
                             Game of Thrones Character API
                         </a>
                     </p>
