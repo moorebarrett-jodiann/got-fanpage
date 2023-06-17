@@ -543,6 +543,10 @@ section .character-grid .character-card .image-container .img-bg .character-img 
     font-weight: 600;
     color: var(--app-yellow);
     margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
 }
 
 /* ============================= DETAILS ============================================ */
